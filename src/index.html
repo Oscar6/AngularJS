@@ -12,11 +12,38 @@
     <!-- <script src="js/angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 
+    <style>
+        .new-class {
+            font-size: 72px;
+        }
+
+        .other-class {
+            font-size: 30px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Hello World</h1>
+    <!-- <h1>Hello, {{ name }}!</h1>
+    <input type='text' ng-model='name' /> -->
+
+    <!-- Binding Conditionals -->
+    <!-- <h1 class='new-class'>Hello,
+        <span ng-if='name'>{{ name }}</span>
+        <span ng-if='!name'>World</span>
+        !
+    </h1>
+    <input type='text' ng-model='name' /> -->
+
+    <!-- Binding Conditionals: Applying Style Classe if condition is met -->
+    <h1 class='new-class' ng-class="{'other-class': name=='Olive'}">Hello,
+            <span ng-if='name'>{{ name }}</span>
+            <span ng-if='!name'>World</span>
+            !
+    </h1>
+    <input type='text' ng-model='name' />
 
 </body>
 
