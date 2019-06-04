@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="firstApp">
 
 <head>
 
@@ -11,6 +11,11 @@
 
     <!-- <script src="js/angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+    <script src="js/app/app.module.js"></script>
+    <script src="js/app/app.config.js"></script>
+    <script src="js/app/blog-list/blog-list.module.js"></script>
+    <script src="js/app/blog-list/blog-list.component.js"></script>
 
     <style>
         .new-class {
@@ -38,13 +43,20 @@
     <input type='text' ng-model='name' /> -->
 
     <!-- Binding Conditionals: Applying Style Classe if condition is met -->
-    <h1 class='new-class' ng-class="{'other-class': name=='Olive'}">Hello,
+    <!-- <h1 class='new-class' ng-class="{'other-class': name=='Olive'}">Hello,
             <span ng-if='name'>{{ name }}</span>
             <span ng-if='!name'>World</span>
             !
     </h1>
-    <input type='text' ng-model='name' />
+    <input type='text' ng-model='name' /> -->
 
+    <!-- Controller & Component: html can be added as template to component file -->
+    <!-- <div class='' ng-controller='BlogListController'>
+        <h1 class='new-class'>{{ title }}</h1>
+        <button ng-click='someClickTest()'>Click me!</button>
+    </div> -->
+
+    <blog-list></blog-list>
 </body>
 
 </html>
