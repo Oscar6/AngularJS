@@ -50,3 +50,6 @@ Initialize Angular:
     -In index.html edit html tag to and add name of app
         <!-- <html lang="en" ng-app="name of app"> -->
     
+
+Create Local Webserver using Rack:
+https://github.com/codingforentrepreneurs/Guides/blob/master/all/angular_webserver.md

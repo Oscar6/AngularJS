@@ -3,6 +3,7 @@
 
 <head>
 
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,11 +12,14 @@
 
     <!-- <script src="js/angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
 
-    <script src="js/app/app.module.js"></script>
-    <script src="js/app/app.config.js"></script>
-    <script src="js/app/blog-list/blog-list.module.js"></script>
-    <script src="js/app/blog-list/blog-list.component.js"></script>
+    <script src="/js/app/app.module.js"></script>
+    <script src="/js/app/app.config.js"></script>
+
+    <script src="/js/app/blog-list/blog-list.module.js"></script>
+    <script src="/js/app/blog-list/blog-list.component.js"></script>
 
     <style>
         .new-class {
@@ -56,7 +60,10 @@
         <button ng-click='someClickTest()'>Click me!</button>
     </div> -->
 
-    <blog-list></blog-list>
+    <!-- <blog-list></blog-list> -->
+    <h1>Angular Blog</h1>
+    <div ng-view></div>
+
 </body>
 
 </html>
