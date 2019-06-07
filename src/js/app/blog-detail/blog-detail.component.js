@@ -4,36 +4,56 @@
 angular.module("blogDetail").
 component("blogDetail", {
   templateUrl: './templates/blog-detail.html',
-  controller: function($http, $location, $routeParams, $scope){
+  controller: function(Post, $http, $location, $routeParams, $scope){
     
-// HTTP Request for JSON file
-    $http.get("/json/posts.json").then(successCallback, errorCallback);
+// Mapping to a RESTful API using $resource
 
-    function successCallback(response, status, config, statusText) {
-      $scope.notFound = true
-    //   console.log(response.data);
-      var blogItems = response.data
-      $scope.posts = blogItems
-    //   console.log(blogItems)
-      //   iterating through blogItems/forEach loop
-      angular.forEach(blogItems, function(post) {
+    console.log(Post.query())
+    console.log(Post.get())
+    
+    Post.query(function(data) {
+      angular.forEach(data, function(post) {
         if (post.id == $routeParams.id) {
           $scope.notFound = false;
           $scope.post = post;
         }
         // console.log(post);
       })
-    }
+    })
+        if ($scope.notFound) {
+            console.log("Not Found");
+            $location.path("/");
+        }
 
-    function errorCallback(response, status, config, statusText){
-        $scope.notFound = true
-        console.log(response)
-    }
+// HTTP Request for JSON file
 
-    if ($scope.notFound) {
-        console.log("Not Found")
-        $location.path("/")
-    }
+    // $http.get("/json/posts.json").then(successCallback, errorCallback);
+
+    // function successCallback(response, status, config, statusText) {
+    //   $scope.notFound = true
+    //   console.log(response.data);
+    //   var blogItems = response.data
+    //   $scope.posts = blogItems
+    //   console.log(blogItems)
+      //   iterating through blogItems/forEach loop
+    //   angular.forEach(blogItems, function(post) {
+    //     if (post.id == $routeParams.id) {
+    //       $scope.notFound = false;
+    //       $scope.post = post;
+    //     }
+        // console.log(post);
+    //   })
+    // }
+
+    // function errorCallback(response, status, config, statusText){
+    //     $scope.notFound = true
+    //     console.log(response)
+    // }
+
+    // if ($scope.notFound) {
+    //     console.log("Not Found")
+    //     $location.path("/")
+    // }
 
 
 // Iterating through a Variable
