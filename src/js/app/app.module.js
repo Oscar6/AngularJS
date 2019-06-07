@@ -6,5 +6,6 @@ angular.module('firstApp', [
     'ngRoute',
     
     // internal
+    'blogDetail',
     'blogList'
 ]);
