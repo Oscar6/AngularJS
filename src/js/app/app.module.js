@@ -7,5 +7,6 @@ angular.module('firstApp', [
     
     // internal
     'blogDetail',
-    'blogList'
+    'blogList',
+    'confirmClick'
 ]);

@@ -53,3 +53,8 @@ Initialize Angular:
 
 Create Local Webserver using Rack:
 https://github.com/codingforentrepreneurs/Guides/blob/master/all/angular_webserver.md
+
+Creating a confirmed click with a message. Can be used to submit forms:
+
+    - See "utils" folder
+    - See <a> tag in blog-list.html 
