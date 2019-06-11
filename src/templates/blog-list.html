@@ -9,10 +9,10 @@
 <!-- {{ items }} -->
 
 <ul ng-if='items.length > 0'>
-    <li ng-repeat='item in items'>
+    <li ng-repeat='post in items'>
             <!-- Confirmed Click for submitting a form: confirm-click and confirmed-click -->
-        <a ng-href='/blog/{{ item.id }}' confirm-click="Are you ready?" confirmed-click='/blog/{{ item.id }}'/>{{ item.title }} {{ item.publishDate }}</a>
+        <a ng-href='#' confirm-click="Are you ready?" confirmed-click='goToItem(post)'/>{{ post.title }} {{ post.publishDate }}</a>
     </li>
 </ul>
 
-<span ng-if='items.length == 4'>More posts coming soon</span>
+<span ng-if='items.length == 0'>More posts coming soon</span>
