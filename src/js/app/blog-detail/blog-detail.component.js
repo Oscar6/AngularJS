@@ -21,6 +21,14 @@ component("blogDetail", {
         // console.log(post);
       })
     })
+
+    // Deleting & Confirm Delete Comments
+    $scope.deleteComment = function(comment) {
+      $scope.$apply(
+        $scope.post.comments.splice(comment, 1)
+      )
+    }
+
     // Adding & Submitting Comments
     $scope.addReply = function() {
       console.log($scope.reply);
