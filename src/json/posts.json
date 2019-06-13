@@ -3,7 +3,11 @@
     "title": "Book One",
     "id": 1,
     "description": "Book one in series",
-    "publishDate": "2019-06-04"
+    "publishDate": "2019-06-04",
+    "comments": [
+      { "id": 1, "text": "First random comment" },
+      { "id": 2, "text": "Random comment" }
+    ]
   },
   {
     "title": "Book Two",
