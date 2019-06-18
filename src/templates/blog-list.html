@@ -8,11 +8,28 @@
 <!-- Tag below displays items from variable -->
 <!-- {{ items }} -->
 
-<ul ng-if='items.length > 0'>
-    <li ng-repeat='post in items'>
+<!-- <ul ng-if='items.length > 0'>
+    <li ng-repeat='post in items'> -->
             <!-- Confirmed Click for submitting a form: confirm-click and confirmed-click -->
-        <a ng-href='#' confirm-click="Are you ready?" confirmed-click='goToItem(post)'/>{{ post.title }} {{ post.publishDate }}</a>
+        <!-- <a ng-href='#' confirm-click="Are you ready?" confirmed-click='goToItem(post)'/>{{ post.title }} {{ post.publishDate }}</a>
     </li>
-</ul>
+</ul> -->
 
 <span ng-if='items.length == 0'>More posts coming soon</span>
+
+
+<div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat='post in items'>
+        <div class="card">
+            <img src="..." alt="...">
+            <div class="caption">
+                <h3>{{ post.title }}</h3>
+                <p> {{ post.text }} {{ post.publishDate }}</p>
+                <p>
+                    <a ng-href='#' class='btn btn-primary' confirm-click='Are you ready?'
+                        confirmed-click='goToItem(post)' />View</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
