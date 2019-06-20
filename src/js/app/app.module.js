@@ -2,6 +2,7 @@
 
 angular.module('firstApp', [
     // external
+    // 'angularUtils.directives.dirPagination',
     'ngResource',
     'ngRoute',
     

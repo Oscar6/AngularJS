@@ -7,24 +7,70 @@
     "comments": [
       { "id": 1, "text": "First random comment" },
       { "id": 2, "text": "Random comment" }
-    ]
+    ],
+    "image": "http://t3.gstatic.com/images?q=tbn:ANd9GcSAIDLGSpEUR3NjYQ9CYaiyZb1RPG3fAj08_i9sAY6i0e4bAfnL"
   },
   {
     "title": "Book Two",
     "id": 2,
     "description": "Book two in series",
-    "publishDate": "2019-06-05"
+    "publishDate": "2019-06-01",
+    "image": "/img/img2.jpg"
   },
   {
     "title": "Book Three",
     "id": 3,
     "description": "Book three in series",
-    "publishDate": "2019-06-06"
+    "publishDate": "2019-06-06",
+    "image": "/img/img2.jpg"
   },
   {
     "title": "Book Four",
     "id": 4,
     "description": "Book four in series",
-    "publishDate": "2019-06-07"
+    "publishDate": "2019-06-07",
+    "image": "/img/img2.jpg"
+  },
+  {
+    "title": "Book Five",
+    "id": 5,
+    "description": "Book Five in series",
+    "publishDate": "2019-06-07",
+    "image": "/img/img2.jpg"
+  },
+  {
+    "title": "Book Six",
+    "id": 6,
+    "description": "Book Six in series",
+    "publishDate": "2019-06-07",
+    "image": "/img/img2.jpg"
+  },
+  {
+    "title": "Book Seven",
+    "id": 7,
+    "description": "Book Seven in series",
+    "publishDate": "2019-06-07",
+    "image": "/img/img2.jpg"
+  },
+  {
+    "title": "Book Eight",
+    "id": 8,
+    "description": "Book Eight in series",
+    "publishDate": "2019-06-07",
+    "image": "/img/img2.jpg"
+  },
+  {
+    "title": "Book Nine",
+    "id": 9,
+    "description": "Book Nine in series",
+    "publishDate": "2019-06-07",
+    "image": "http://t3.gstatic.com/images?q=tbn:ANd9GcSAIDLGSpEUR3NjYQ9CYaiyZb1RPG3fAj08_i9sAY6i0e4bAfnL"
+  },
+  {
+    "title": "Book Ten",
+    "id": 10,
+    "description": "Book Ten in series",
+    "publishDate": "2019-06-07",
+    "image": "http://t3.gstatic.com/images?q=tbn:ANd9GcSAIDLGSpEUR3NjYQ9CYaiyZb1RPG3fAj08_i9sAY6i0e4bAfnL"
   }
 ]

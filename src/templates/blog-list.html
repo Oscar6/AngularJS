@@ -23,12 +23,21 @@
     </li>
 </ul> -->
 
+
+<!-- Blogs organized in columns -->
+<select ng-model= 'order'>
+    <option value="-publishDate">Recent</option>
+    <option value="-publishDate">Older</option>
+    <option value="title">A-Z</option>
+    <option value="-title">Z-A</option>
+</select>
+
 <span ng-if='items.length == 0'>More posts coming soon</span>
 
 <div class="row" ng-repeat='items in colItems'>
-    <div class="{{ cssClass }}" ng-repeat='post in items | filter: query'>
+    <div class="{{ cssClass }}" ng-repeat='post in items | filter: query | orderBy: order'>
         <div class="card">
-            <img src="..." alt="...">
+            <img ng-src="{{ post.image }}" alt="...">
             <div class="caption">
                 <h3>{{ post.title }}</h3>
                 <p> {{ post.text }} {{ post.publishDate }}</p>
