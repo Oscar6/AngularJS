@@ -35,6 +35,9 @@
 
     <script src="/js/app/utils/confirm-click/confirm-click.module.js"></script>
     <script src="/js/app/utils/confirm-click/confirm-click.directive.js"></script>
+
+    <script src="/js/app/utils/firstApp-nav/firstApp-nav.module.js"></script>
+    <script src="/js/app/utils/firstApp-nav/firstApp-nav.directive.js"></script>
     
     <style>
         .new-class {
@@ -76,12 +79,14 @@
     </div> -->
 
     <!-- <blog-list></blog-list> -->
-    <nav class='container'>
+    <!-- <nav class='container'>
         <h1>Angular Blog</h1>
-    </nav>
-    
-    <div class='container' ng-view>
+    </nav> -->
 
+    <div class='container'>
+        <firstApp-nav></firstApp-nav>
+        <div ng-view>
+        </div>
     </div>
 
 </body>

@@ -9,5 +9,6 @@ angular.module('firstApp', [
     // internal
     'blogDetail',
     'blogList',
-    'confirmClick'
+    'confirmClick',
+    'firstAppNav'
 ]);
