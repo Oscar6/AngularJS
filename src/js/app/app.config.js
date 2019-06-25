@@ -30,3 +30,5 @@ angular.module('firstApp').
                     template:"Not found"
                 })
     });
+
+// Force a redirect with ' redirectTo: '/' '

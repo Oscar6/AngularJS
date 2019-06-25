@@ -12,10 +12,17 @@ component("blogDetail", {
     console.log(Post.get())
     
     Post.query(function(data) {
+      $scope.notFound = true
+      // $scope.commentsExist = false
+      $scope.comments = []
       angular.forEach(data, function(post) {
         if (post.id == $routeParams.id) {
-          $scope.notFound = false;
-          $scope.post = post;
+          $scope.notFound = false
+          $scope.post = post
+          if (post.comments) {
+            $scope.comments = post.comments
+            // $scope.commentsExist = true;
+          }
           resetReply()
         }
         // console.log(post);
@@ -25,20 +32,20 @@ component("blogDetail", {
     // Deleting & Confirm Delete Comments
     $scope.deleteComment = function(comment) {
       $scope.$apply(
-        $scope.post.comments.splice(comment, 1)
+        $scope.comments.splice(comment, 1)
       )
     }
 
     // Adding & Submitting Comments
     $scope.addReply = function() {
       console.log($scope.reply);
-      $scope.post.comments.push($scope.reply)
+      $scope.comments.push($scope.reply)
       resetReply()
     }
 
     function resetReply() {
       $scope.reply = {
-        "id": $scope.post.comments.length + 1,
+        "id": $scope.comments.length + 1,
         "text": "",
       }
     }
