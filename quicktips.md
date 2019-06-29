@@ -60,3 +60,5 @@ Creating a confirmed click with a message. Can be used to submit forms:
     - See <a> tag in blog-list.html
 
 Find Pagination solution
+
+Bootstrap version used in this course is no longer supported
