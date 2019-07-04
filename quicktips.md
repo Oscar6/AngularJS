@@ -59,8 +59,9 @@ Creating a confirmed click with a message. Can be used to submit forms:
     - See "utils" folder
     - See <a> tag in blog-list.html
 
+
+Bootstrap version used in this course is no longer supported
+
 Find Pagination solution
 
 Find Navbar solution
-
-Bootstrap version used in this course is no longer supported
