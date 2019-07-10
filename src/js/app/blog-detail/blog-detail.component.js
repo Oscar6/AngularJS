@@ -7,7 +7,6 @@ component("blogDetail", {
   controller: function(Post, $http, $location, $routeParams, $scope){
     
 // Mapping to a RESTful API using $resource
-
     console.log(Post.query())
     console.log(Post.get())
     
