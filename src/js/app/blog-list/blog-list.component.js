@@ -11,14 +11,13 @@ angular.module("blogList").component("blogList", {
         $location.path("/blog/" + post.id);
       });
     };
-    // Mapping to a RESTful API using $resource
 
+    // Mapping to a RESTful API using $resource
     //     $scope.items = Post.query();
     //   }
     // });
 
     // Adding JS to adjust columns
-
     $scope.changeCols = function(number) {
       if (angular.isNumber(number)) {
         $scope.numCols = number
@@ -27,6 +26,7 @@ angular.module("blogList").component("blogList", {
       }
       setupCol($scope.items, $scope.numCols)
     }
+
     // Watches for a search query in console
     $scope.loadingQuery = false
     $scope.$watch(function() {
