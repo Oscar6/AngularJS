@@ -1,3 +1,5 @@
+Setting up AngularJS projects
+
 Download Angular any of the three below:
     -CDN
     -NPM
