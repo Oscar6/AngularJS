@@ -67,3 +67,16 @@ Bootstrap version used in this course is no longer supported
 Find Pagination solution
 
 Find Navbar solution
+
+Scrimba Notes
+    Angular CLI
+        - ng --version
+        - ng --help
+        - ng new my-app-name
+        - ng generate
+            | component | directive | pipe | service | class | interface | enum | guard |
+        
+        ng build
+        ng serve
+        ng lint
+        ng test
